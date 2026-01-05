@@ -3,6 +3,7 @@ import TrendingGames from "./sections/TrendingGames";
 import About from "./sections/About";
 import Process from "./sections/Process";
 import Projects from "./sections/Projects";
+import Subscribe from "./sections/Subscribe";
 
 const Home = () => {
     return (<>
@@ -11,6 +12,7 @@ const Home = () => {
         <About></About>
         <Process></Process>
         <Projects></Projects>
+        <Subscribe></Subscribe>
     </>
     )
 }

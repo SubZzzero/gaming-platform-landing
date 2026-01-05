@@ -50,7 +50,7 @@ const Projects = () => {
             <img src={proj5} alt="proj5" />
             <img src={proj6} alt="proj6" />
         </Box>
-        <Box sx={{ textAlign: "center" }}><Button variant="contained" size="large" sx={{
+        <Box sx={{ textAlign: "center", marginBottom: "110px" }}><Button variant="contained" size="large" sx={{
             backgroundColor: "#24201C"
         }}>SEE ALL</Button></Box>
     </Box >

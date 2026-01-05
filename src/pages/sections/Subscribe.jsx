@@ -8,7 +8,7 @@ const Subscribe = () => {
                 maxWidth: "1300px",
                 width: "100%",
                 padding: "0 15px",
-                margin: "0 auto",
+                margin: "0 auto 160px auto"
             }}
         >
 

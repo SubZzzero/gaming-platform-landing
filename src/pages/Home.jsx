@@ -3,7 +3,7 @@ import TrendingGames from "./sections/TrendingGames";
 import About from "./sections/About";
 import Process from "./sections/Process";
 import Projects from "./sections/Projects";
-import Subscribe from "./sections/Subscribe";
+import Subscribe from "../components/Subscribe";
 
 const Home = () => {
     return (<>

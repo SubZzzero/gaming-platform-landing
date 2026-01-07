@@ -6,6 +6,7 @@ import PortfolioSection from "./sections/PortfolioSection";
 import aboutMain from "../assets/about_main_img.png"
 import secondMain from "../assets/about_second.png"
 import crysis from "../assets/cr1.png"
+
 import Subscribe from "../components/Subscribe";
 const Portfolio = () => {
     return (
@@ -56,9 +57,9 @@ const Portfolio = () => {
                         <LocationOnIcon sx={{ fontSize: "55px" }} />
                         <Box sx={{ display: "flex", flexDirection: "column" }}>
                             <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
-                                90+
+                                30+
                             </Typography>
-                            <Typography fontSize="20px">Clients</Typography>
+                            <Typography fontSize="20px">Countries</Typography>
                         </Box>
                     </Box>
                     <Box sx={{ width: "1px", height: "80px", backgroundColor: "#fff", opacity: 0.3 }} />
@@ -66,15 +67,31 @@ const Portfolio = () => {
                         <StorageIcon sx={{ fontSize: "55px" }} />
                         <Box sx={{ display: "flex", flexDirection: "column" }}>
                             <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
-                                90+
+                                50+
                             </Typography>
-                            <Typography fontSize="20px">Clients</Typography>
+                            <Typography fontSize="20px">Projects</Typography>
                         </Box>
                     </Box>
 
                 </Box>
 
             </Box>
+
+            <PortfolioSection
+                image={secondMain}
+                title="Lorem"
+                subtitle="Lorem Ipsum is simply dummy text"
+                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                features={[
+                    "Lorem ipsum",
+                    "Lorem ipsum",
+                    "Lorem ipsum",
+                    "Lorem ipsum",
+                    "Lorem ipsum"
+                ]}
+            ></PortfolioSection>
+
+
 
             <PortfolioSection
                 image={aboutMain}

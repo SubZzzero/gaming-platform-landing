@@ -3,11 +3,13 @@ import { Box, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import aboutMain from "../assets/about_main_img.png"
 import secondMain from "../assets/about_second.png"
+import Portfolio from "./sections/PortfolioSection";
 import avatar1 from "../assets/avatar1.png"
 import avatar2 from "../assets/avatar2.png"
 import avatar3 from "../assets/avatar3.png"
 import avatar4 from "../assets/avatar4.png"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import PortfolioSection from "./sections/PortfolioSection";
 const About = () => {
     return <div>
 
@@ -123,30 +125,11 @@ const About = () => {
                     </Box>
                 </Box>
 
-                <Box
-                    sx={{
-                        backgroundColor: "#1C140F",
-                        height: "600px",
-                        width: "100%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        gap: "80px",
-                        marginBottom: "150px"
-                    }}
-                >
-                    <Box component="img" src={secondMain} alt="secondMain" />
-
-                    <Box sx={{ maxWidth: "500px" }}>
-                        <Typography sx={{ fontWeight: "medium", marginBottom: "15px" }}>Lorem</Typography>
-                        <Typography sx={{ fontSize: "28px", fontWeight: "600", marginBottom: "15px" }}>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </Typography>
-                        <Typography>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        </Typography>
-                    </Box>
-                </Box>
+                <PortfolioSection image={secondMain}
+                    title="Lorem"
+                    subtitle="Lorem Ipsum is simply dummy text"
+                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                ></PortfolioSection>
 
                 <Box>
                     <Typography sx={{ fontSize: "25px", fontWeight: "600", marginBottom: "50px" }}>Our Team</Typography>

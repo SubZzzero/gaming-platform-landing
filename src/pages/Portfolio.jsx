@@ -10,119 +10,236 @@ import crysis from "../assets/cr1.png"
 import Subscribe from "../components/Subscribe";
 const Portfolio = () => {
     return (
-        <Box sx={{
-            maxWidth: "1330px",
-            width: "100%",
-            padding: "0 15px",
-            margin: "0 auto",
-        }}>
+        <>
+
+            <Box sx={{
+                maxWidth: "1330px",
+                width: "100%",
+                padding: "0 15px",
+                margin: "0 auto",
+            }}>
 
 
 
-            <Box sx={{ textAlign: "center", marginTop: "150px" }}>
-                <Typography sx={{ fontSize: "33px", fontWeight: "600", marginBottom: "15px" }}>Lorem Ipsum is simply dummy text of the printing and.</Typography>
-                <Typography sx={{ fontWeight: "medium", marginBottom: "45px" }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Typography>
-            </Box>
+                <Box sx={{ textAlign: "center", marginTop: "150px" }}>
+                    <Typography sx={{ fontSize: "33px", fontWeight: "600", marginBottom: "15px" }}>Lorem Ipsum is simply dummy text of the printing and.</Typography>
+                    <Typography sx={{ fontWeight: "medium", marginBottom: "45px" }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</Typography>
+                </Box>
 
-            <Box
-                sx={{
-                    backgroundColor: "#1C140F",
-                    height: "200px",
-                    display: "flex",
-                    alignItems: "center",
-                    marginBottom: "145px"
-                }}
-            >
                 <Box
                     sx={{
+                        backgroundColor: "#1C140F",
+                        height: "200px",
                         display: "flex",
-                        justifyContent: "space-around",
-                        width: "100%",
+                        alignItems: "center",
+                        marginBottom: "145px"
                     }}
                 >
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "space-around",
+                            width: "100%",
+                        }}
+                    >
 
-                    <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
 
-                        <AccountCircleIcon sx={{ fontSize: "55px" }} />
+                            <AccountCircleIcon sx={{ fontSize: "55px" }} />
 
-                        <Box sx={{ display: "flex", flexDirection: "column" }}>
-                            <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
-                                90+
-                            </Typography>
-                            <Typography fontSize="20px">Clients</Typography>
+                            <Box sx={{ display: "flex", flexDirection: "column" }}>
+                                <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
+                                    90+
+                                </Typography>
+                                <Typography fontSize="20px">Clients</Typography>
+                            </Box>
                         </Box>
-                    </Box>
-                    <Box sx={{ width: "1px", height: "80px", backgroundColor: "#fff", opacity: 0.3 }} />
-                    <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                        <LocationOnIcon sx={{ fontSize: "55px" }} />
-                        <Box sx={{ display: "flex", flexDirection: "column" }}>
-                            <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
-                                30+
-                            </Typography>
-                            <Typography fontSize="20px">Countries</Typography>
+                        <Box sx={{ width: "1px", height: "80px", backgroundColor: "#fff", opacity: 0.3 }} />
+                        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                            <LocationOnIcon sx={{ fontSize: "55px" }} />
+                            <Box sx={{ display: "flex", flexDirection: "column" }}>
+                                <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
+                                    30+
+                                </Typography>
+                                <Typography fontSize="20px">Countries</Typography>
+                            </Box>
                         </Box>
-                    </Box>
-                    <Box sx={{ width: "1px", height: "80px", backgroundColor: "#fff", opacity: 0.3 }} />
-                    <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                        <StorageIcon sx={{ fontSize: "55px" }} />
-                        <Box sx={{ display: "flex", flexDirection: "column" }}>
-                            <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
-                                50+
-                            </Typography>
-                            <Typography fontSize="20px">Projects</Typography>
+                        <Box sx={{ width: "1px", height: "80px", backgroundColor: "#fff", opacity: 0.3 }} />
+                        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+                            <StorageIcon sx={{ fontSize: "55px" }} />
+                            <Box sx={{ display: "flex", flexDirection: "column" }}>
+                                <Typography sx={{ fontSize: "25px", fontWeight: "bold" }}>
+                                    50+
+                                </Typography>
+                                <Typography fontSize="20px">Projects</Typography>
+                            </Box>
                         </Box>
+
                     </Box>
 
                 </Box>
 
+                <PortfolioSection
+                    image={secondMain}
+                    title="Lorem"
+                    subtitle="Lorem Ipsum is simply dummy text"
+                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                    features={[
+                        "Lorem ipsum",
+                        "Lorem ipsum",
+                        "Lorem ipsum",
+                        "Lorem ipsum",
+                        "Lorem ipsum"
+                    ]}
+                ></PortfolioSection>
+
+
+
+                <PortfolioSection
+                    image={aboutMain}
+                    reverse="true"
+                    title="Lorem"
+                    buttonText="Read More"
+                    subtitle="Lorem Ipsum is simply dummy text"
+                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                ></PortfolioSection>
+
+                <PortfolioSection
+                    image={secondMain}
+                    title="Lorem"
+                    buttonText="Read More"
+                    subtitle="Lorem Ipsum is simply dummy text"
+                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                ></PortfolioSection>
+
+                <PortfolioSection
+                    image={crysis}
+                    title="Lorem"
+                    reverse="true"
+                    buttonText="Read More"
+                    subtitle="Lorem Ipsum is simply dummy text"
+                    description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
+                ></PortfolioSection>
+
+                <Subscribe></Subscribe>
+            </Box >
+
+            <Box
+                sx={{
+                    width: "100%",
+                    minHeight: "800px",
+                    bgcolor: "#1C140F",
+                    mb: "145px",
+                }}
+            >
+                {/* Header */}
+                <Box
+                    sx={{
+                        maxWidth: 500,
+                        textAlign: "center",
+                        mx: "auto",
+                        mt: "80px",
+                        mb: "145px",
+                    }}
+                >
+                    <Typography
+                        sx={{
+                            fontSize: 35,
+                            fontWeight: 500,
+                            mb: 2,
+                        }}
+                    >
+                        Trusted by Thousands of Happy Customer
+                    </Typography>
+
+                    <Typography>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum is simply dummy.
+                    </Typography>
+                </Box>
+
+                {/* Cards */}
+                <Box sx={{
+                    display: "flex",
+                    justifyContent: "space-around"
+                }}>
+
+                    <Box
+                        sx={{
+                            width: 400,
+                            minHeight: 250,
+                            border: "1px solid white",
+                            borderRadius: 2,
+                            p: 3,
+                            boxSizing: "border-box",
+                        }}
+                    >
+                        <Typography sx={{ fontSize: 18, fontWeight: 500, mb: 1 }}>
+                            Amazing Service
+                        </Typography>
+
+                        <Typography sx={{ fontSize: 14, mb: 2 }}>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </Typography>
+
+                        <Typography sx={{ fontSize: 13, color: "gray" }}>
+                            ⭐⭐⭐⭐⭐
+                        </Typography>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: 400,
+                            minHeight: 250,
+                            border: "1px solid white",
+                            borderRadius: 2,
+                            p: 3,
+                            boxSizing: "border-box",
+                        }}
+                    >
+                        <Typography sx={{ fontSize: 18, fontWeight: 500, mb: 1 }}>
+                            Amazing Service
+                        </Typography>
+
+                        <Typography sx={{ fontSize: 14, mb: 2 }}>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </Typography>
+
+                        <Typography sx={{ fontSize: 13, color: "gray" }}>
+                            ⭐⭐⭐⭐⭐
+                        </Typography>
+                    </Box>
+
+                    <Box
+                        sx={{
+                            width: 400,
+                            minHeight: 250,
+                            border: "1px solid white",
+                            borderRadius: 2,
+                            p: 3,
+                            boxSizing: "border-box",
+                        }}
+                    >
+                        <Typography sx={{ fontSize: 18, fontWeight: 500, mb: 1 }}>
+                            Amazing Service
+                        </Typography>
+
+                        <Typography sx={{ fontSize: 14, mb: 2 }}>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </Typography>
+
+                        <Typography sx={{ fontSize: 13, color: "gray" }}>
+                            ⭐⭐⭐⭐⭐
+                        </Typography>
+                    </Box>
+                </Box>
             </Box>
 
-            <PortfolioSection
-                image={secondMain}
-                title="Lorem"
-                subtitle="Lorem Ipsum is simply dummy text"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
-                features={[
-                    "Lorem ipsum",
-                    "Lorem ipsum",
-                    "Lorem ipsum",
-                    "Lorem ipsum",
-                    "Lorem ipsum"
-                ]}
-            ></PortfolioSection>
 
-
-
-            <PortfolioSection
-                image={aboutMain}
-                reverse="true"
-                title="Lorem"
-                buttonText="Read More"
-                subtitle="Lorem Ipsum is simply dummy text"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
-            ></PortfolioSection>
-
-            <PortfolioSection
-                image={secondMain}
-                title="Lorem"
-                buttonText="Read More"
-                subtitle="Lorem Ipsum is simply dummy text"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
-            ></PortfolioSection>
-
-            <PortfolioSection
-                image={crysis}
-                title="Lorem"
-                reverse="true"
-                buttonText="Read More"
-                subtitle="Lorem Ipsum is simply dummy text"
-                description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
-            ></PortfolioSection>
-
-            <Subscribe></Subscribe>
-        </Box >
-
-
+        </>
     )
 }
 

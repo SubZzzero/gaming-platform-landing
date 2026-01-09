@@ -7,6 +7,7 @@ import Contacts from "./pages/Contacts"
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop"
 import Portfolio from "./pages/Portfolio";
+import News from "./pages/News";
 function App() {
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/news" element={<News />} />
         </Routes>
         <Footer></Footer>
       </Box>

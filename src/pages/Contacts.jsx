@@ -6,6 +6,7 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Subscribe from "../components/Subscribe";
 
 const Contacts = () => {
     return <Box>
@@ -75,6 +76,31 @@ const Contacts = () => {
 
 
         </Box>
+
+
+        <Box sx={{
+            backgroundColor: "#1C140F",
+            minHeight: "900px",
+            width: "100%",
+            marginBottom: "145px",
+
+        }}>
+
+
+            <Typography sx={{ fontSize: "30px", paddingTop: "50px", textAlign: "center" }}>Say Hello</Typography>
+            <Typography sx={{ textAlign: "center", marginBottom: "100px" }}>Lorem Ipsum is simply dummy text of the printing .</Typography>
+
+
+
+
+
+
+        </Box>
+
+
+
+
+        <Subscribe></Subscribe>
 
     </Box>
 }

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, TextField, Button } from "@mui/material";
 import map from "../assets/map_contacts.png"
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -7,6 +7,36 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Subscribe from "../components/Subscribe";
+import { NavLink } from "react-router-dom";
+
+const inputStyles = {
+    "& .MuiInputLabel-root": {
+        color: "#4F4F4F",
+    },
+
+    "& .MuiOutlinedInput-root": {
+        backgroundColor: "#2C2520",
+        color: "#fff",
+        borderRadius: "10px",
+
+        "& fieldset": {
+            borderColor: "#CECECE",
+            borderRadius: "10px",
+        },
+
+        "&:hover fieldset": {
+            borderColor: "#CECECE",
+        },
+
+        "&.Mui-focused fieldset": {
+            borderColor: "#CECECE",
+        },
+    },
+
+    "& .MuiInputLabel-root.Mui-focused": {
+        color: "#4F4F4F",
+    },
+};
 
 const Contacts = () => {
     return <Box>
@@ -80,7 +110,7 @@ const Contacts = () => {
 
         <Box sx={{
             backgroundColor: "#1C140F",
-            minHeight: "900px",
+            minHeight: "850px",
             width: "100%",
             marginBottom: "145px",
 
@@ -90,8 +120,68 @@ const Contacts = () => {
             <Typography sx={{ fontSize: "30px", paddingTop: "50px", textAlign: "center" }}>Say Hello</Typography>
             <Typography sx={{ textAlign: "center", marginBottom: "100px" }}>Lorem Ipsum is simply dummy text of the printing .</Typography>
 
+            <Box
+                component="form"
+                sx={{
+                    maxWidth: "670px",
+                    margin: "0 auto",
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    gap: "20px",
+                }}
+            >
+                <TextField label="First Name" fullWidth sx={inputStyles} />
+                <TextField label="Last Name" fullWidth sx={inputStyles} />
+
+                <TextField
+                    label="Email Address"
+                    type="email"
+                    fullWidth
+                    sx={{ ...inputStyles, gridColumn: "1 / -1" }}
+                />
+
+                <TextField
+                    label="Message"
+                    multiline
+                    fullWidth
+                    sx={{
+                        ...inputStyles,
+                        gridColumn: "1 / -1",
+
+                        "& .MuiInputBase-root": {
+                            height: "230px",
+                            alignItems: "flex-start",
+                        },
+
+                        "& textarea": {
+                            color: "#fff",
+                        },
+                    }}
+                />
+                <Button
+                    component={NavLink}
+                    to="/"
+                    sx={{
+                        gridColumn: "1 / -1",
+                        justifySelf: "end",
+                        backgroundColor: "#FA9021",
+                        color: "#fff",
+                        padding: "10px 25px",
+                        borderRadius: "6px",
+                        textTransform: "none",
+                        transition: "background-color 0.2s ease",
 
 
+                        "&:hover": {
+                            backgroundColor: "#E87D0E",
+                        },
+                    }}
+                >
+                    Get in touch
+                </Button>
+
+
+            </Box>
 
 
 
